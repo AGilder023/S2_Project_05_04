@@ -38,12 +38,12 @@ img {
     width: 95%;
 }
 
-nav#nav1 {
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
-nav#nav1 {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -53,8 +53,14 @@ nav#nav1 {
     z-index: 1;
 }
 
-nav#nav1 {
+.dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+div {
+    list-style: none;
+    margin: auto;
 }
 
 
@@ -65,4 +71,28 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
